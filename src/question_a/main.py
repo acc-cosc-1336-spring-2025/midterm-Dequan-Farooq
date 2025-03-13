@@ -1,12 +1,10 @@
-import question_a
+from question_a import use_local_variable
+
 
 def main():
-    num = 50  
-    question_a.use_local_variable(num)  
-    
-    
-    print("Value of num in main program:", num)  
+    num = 100  # Define the variable num
+    use_local_variable(num)  # Call the function with num as parameter
+    print("The value of num after calling the function:", num) 
 
-
-main() 
-question_a.test_use_local_variable() 
+if __name__ == '__main__':
+    main()

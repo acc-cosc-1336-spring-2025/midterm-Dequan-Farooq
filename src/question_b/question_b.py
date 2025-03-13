@@ -7,6 +7,3 @@ def is_prime(q):
         if q % i == 0:
             return False
     return True  
-print(is_prime(4))
-print(is_prime(5))  
-print(is_prime(11))

@@ -1,20 +1,13 @@
-#add import
 import question_d
 
 def main():
-    while True:
-        age = input("Enter the person's age (or type 'exit' to quit): ")
-        
-        if age.lower() == 'exit':
-            print("Goodbye!")
-            break
-        
-        try:
-            age = int(age)  # Convert input to an integer
-            category = question_d.get_person_category(age)
-            print(f"The person is: {category}")
-        except ValueError:
-            print("Invalid input, please enter a valid number.")
+    # Testing the get_person_category function
+    age = 25  # Example age
+    category = question_d.get_person_category(age)  # Call the function
+    
+    # Display the result
+    print(f"The category for age {age} is: {category}")
 
 # Run the main program
-main()
+if __name__ == '__main__':
+    main()

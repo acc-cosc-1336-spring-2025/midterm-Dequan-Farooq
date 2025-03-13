@@ -1,14 +1,10 @@
-#add import
-import question_c  
+import question_c  # Import the global variable and the function
 
 def main():
-    global global_num 
-    print("Before use_global, global_num =", question_c.global_num)  
-    
-    question_c.use_global()  
-    
-    
-    print("After use_global, global_num =", question_c.global_num)  
+    # Display and modify the global variable using the function
+    print(f"Initial value of global_num: {question_c.get_global_num()}")  # Call the function to get the value
+    question_c.use_global()  # Call the function to modify the global variable
+    print(f"Modified value of global_num: {question_c.get_global_num()}")  # Call the function again to get the updated value
 
-main()  
-question_c.test_use_global()
+if __name__ == "__main__":
+    main()
